@@ -11,11 +11,15 @@ import { ENV_VARS } from "./config/envVars.js";
 import { connectDB } from "./config/db.js";
 import { protectRoute } from "./middleware/protectRoute.js";
 
+const cors = require("cors");
+
 const app = express();
 
 const PORT = ENV_VARS.PORT;
 
 const __dirname = path.resolve();
+
+app.use(cors()); //allow all
 
 app.use(express.json()); // will allow us to parse req.body
 app.use(cookieParser());
