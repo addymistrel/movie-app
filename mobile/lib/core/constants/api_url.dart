@@ -1,6 +1,6 @@
 class ApiUrl {
 
-  static const baseURL = 'https://movie-backend-production-8413.up.railway.app/'; 
+  static const baseURL = 'https://movie-app-production-b90f.up.railway.app/'; 
   static const apiV = 'api/v1/';
   
   static const signup = '${apiV}auth/signup';
